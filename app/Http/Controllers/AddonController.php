@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
  * Class addonController
  * @package App\Http\Controllers
  */
-class addonController extends Controller
+class AddonController extends Controller
 {
     /**
      * Summarized collection of meta items. Catalogs are displayed on the Stremio's Board, Discover and Search.
