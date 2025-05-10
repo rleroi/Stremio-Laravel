@@ -44,7 +44,7 @@ php artisan key:generate
 php artisan serve
 ```
 
-5. Visit `http://localhost:8000` to configure your addon.
+5. Visit `http://localhost:8000` to see your addon.
 
 ## Docker Setup
 
@@ -54,13 +54,13 @@ docker compose up -d
 
 ## Addon Configuration
 
-The template includes an example configuration UI at `/config`.
+The template includes an example configuration UI at `/configure`.
 
 ## Stremio Protocol Implementation
 
 This template implements the Stremio addon protocol with the following endpoints:
 
-- `/manifest.json` - Addon manifest (dynamic based on configuration)
+- `/manifest.json` - Addon manifest
 - `/catalog/{type}/{id}/{extra?}.json` - Content catalog
 - `/meta/{type}/{id}/{extra?}.json` - Content metadata
 - `/stream/{type}/{id}/{extra?}.json` - Stream information
