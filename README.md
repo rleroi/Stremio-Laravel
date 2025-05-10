@@ -23,8 +23,8 @@ A production-ready starter template for building Stremio addons using Laravel. T
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/laravel-stremio-addon.git
-cd laravel-stremio-addon
+git clone https://github.com/rleroi/Stremio-Laravel.git
+cd Stremio-Laravel
 ```
 
 2. Install dependencies:
