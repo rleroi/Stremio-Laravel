@@ -36,8 +36,5 @@ class ConfigController extends Controller
         ]);
 
         // TODO: Implement config saving logic
-
-        return redirect()->route('config.show', ['config' => $config])
-            ->with('success', 'Configuration updated successfully.');
     }
 } 
