@@ -10,7 +10,7 @@ Route::get('/', function () {
     return redirect()->route('config');
 });
 
-Route::get('/configure', [ConfigController::class, 'edit']);
+Route::get('/configure', [ConfigController::class, 'edit'])->name('config');
 Route::get('/{config}/configure', [ConfigController::class, 'edit']);
 
 // Uncomment to enable default Laravel Breeze routes
