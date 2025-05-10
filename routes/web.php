@@ -10,10 +10,8 @@ Route::get('/', function () {
     return redirect()->route('config');
 });
 
-Route::get('/config', [ConfigController::class, 'edit'])->name('config');
-Route::get('/{config}/config', [ConfigController::class, 'edit'])->name('config.show');
-Route::post('/config', [ConfigController::class, 'update'])->name('config.update');
-Route::post('/{config}/config', [ConfigController::class, 'update'])->name('config.update');
+Route::get('/configure', [ConfigController::class, 'show']);
+Route::get('/{config}/configure', [ConfigController::class, 'show']);
 
 // Uncomment to enable default Laravel Breeze routes
 /*Route::get('/dashboard', function () {
