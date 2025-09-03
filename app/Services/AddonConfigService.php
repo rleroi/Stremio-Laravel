@@ -28,7 +28,7 @@ class AddonConfigService implements AddonConfigServiceInterface
 
     public function loadConfig(string $config): AddonConfig
     {
-        return Cache::remember("config.{$config}", 3600, function () use ($config) {
+        return Cache::remember("config.{$config}", 3600, function () {
             // TODO: Implement actual config loading from storage
             return $this->getDefaultConfig();
         });

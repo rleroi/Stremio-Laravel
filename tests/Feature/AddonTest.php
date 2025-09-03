@@ -43,8 +43,8 @@ class AddonTest extends TestCase
                         'banner',
                         'isFree',
                         'type',
-                    ]
-                ]
+                    ],
+                ],
             ]);
     }
 
@@ -81,8 +81,8 @@ class AddonTest extends TestCase
                         'subtitles',
                         'externalUrl',
                         'behaviorHints',
-                    ]
-                ]
+                    ],
+                ],
             ]);
     }
 
@@ -97,7 +97,7 @@ class AddonTest extends TestCase
     public function test_config_parameter_affects_response()
     {
         $config = 'test-config';
-        
+
         $this->mock(AddonConfigServiceInterface::class, function ($mock) use ($config) {
             $mock->shouldReceive('resolve')
                 ->with($config)
@@ -109,4 +109,4 @@ class AddonTest extends TestCase
 
         $response->assertStatus(200);
     }
-} 
+}

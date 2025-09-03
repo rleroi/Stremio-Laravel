@@ -19,22 +19,22 @@ class ConfigController extends Controller
 
         return Inertia::render('Config', [
             'config' => [
-                'name' => $config,
-                'apiKey' => $addonConfig->apiKey,
-                'region' => $addonConfig->region,
+                'name'     => $config,
+                'apiKey'   => $addonConfig->apiKey,
+                'region'   => $addonConfig->region,
                 'language' => $addonConfig->language,
-            ]
+            ],
         ]);
     }
 
     public function update(Request $request, ?string $config = null)
     {
         $validated = $request->validate([
-            'apiKey' => 'required|string|max:255',
-            'region' => 'required|string|in:US,UK,EU,ASIA',
+            'apiKey'   => 'required|string|max:255',
+            'region'   => 'required|string|in:US,UK,EU,ASIA',
             'language' => 'required|string|in:en,es,fr,de',
         ]);
 
         // TODO: Implement config saving logic
     }
-} 
+}

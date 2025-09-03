@@ -12,4 +12,4 @@ class MetaCollection extends ResourceCollection
             'metas' => $this->collection,
         ];
     }
-} 
+}

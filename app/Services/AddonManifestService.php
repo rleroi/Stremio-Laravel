@@ -16,8 +16,8 @@ class AddonManifestService implements AddonManifestServiceInterface
     private const DEFAULT_CATALOGS = [
         [
             'type' => 'movie',
-            'id' => 'moviecatalog'
-        ]
+            'id'   => 'moviecatalog',
+        ],
     ];
     private const DEFAULT_ID_PREFIXES = ['tt'];
 
@@ -27,14 +27,14 @@ class AddonManifestService implements AddonManifestServiceInterface
         $description = $config ? "Laravel Stremio Add-on - {$config->language} content" : self::DEFAULT_DESCRIPTION;
 
         return [
-            'id' => self::DEFAULT_ID,
-            'version' => self::DEFAULT_VERSION,
+            'id'          => self::DEFAULT_ID,
+            'version'     => self::DEFAULT_VERSION,
             'description' => $description,
-            'name' => $name,
-            'resources' => self::DEFAULT_RESOURCES,
-            'types' => self::DEFAULT_TYPES,
-            'catalogs' => self::DEFAULT_CATALOGS,
-            'idPrefixes' => self::DEFAULT_ID_PREFIXES,
+            'name'        => $name,
+            'resources'   => self::DEFAULT_RESOURCES,
+            'types'       => self::DEFAULT_TYPES,
+            'catalogs'    => self::DEFAULT_CATALOGS,
+            'idPrefixes'  => self::DEFAULT_ID_PREFIXES,
         ];
     }
-} 
+}
