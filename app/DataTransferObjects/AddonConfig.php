@@ -23,8 +23,8 @@ class AddonConfig
     public function toArray(): array
     {
         return [
-            'apiKey' => $this->apiKey,
-            'region' => $this->region,
+            'apiKey'   => $this->apiKey,
+            'region'   => $this->region,
             'language' => $this->language,
         ];
     }

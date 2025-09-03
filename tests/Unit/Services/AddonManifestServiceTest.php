@@ -43,4 +43,4 @@ class AddonManifestServiceTest extends TestCase
         $this->assertEquals('Laravel Add-on (UK)', $manifest['name']);
         $this->assertEquals('Laravel Stremio Add-on - en content', $manifest['description']);
     }
-} 
+}

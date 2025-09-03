@@ -11,9 +11,9 @@ class StreamResource extends JsonResource
     {
         return [
             'availability' => $this->availability,
-            'url' => $this->url,
-            'name' => $this->name,
-            'title' => $this->title,
+            'url'          => $this->url,
+            'name'         => $this->name,
+            'title'        => $this->title,
         ];
     }
-} 
+}

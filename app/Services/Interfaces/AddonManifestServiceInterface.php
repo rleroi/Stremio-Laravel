@@ -7,7 +7,7 @@ use App\DataTransferObjects\AddonConfig;
 interface AddonManifestServiceInterface
 {
     /**
-     * Generate manifest based on configuration
+     * Generate manifest based on configuration.
      */
     public function generate(?AddonConfig $config = null): array;
-} 
+}

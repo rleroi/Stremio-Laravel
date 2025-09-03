@@ -38,7 +38,7 @@ class AddonConfigServiceTest extends TestCase
     public function test_load_config_caches_result()
     {
         $configName = 'test-config';
-        
+
         Cache::shouldReceive('remember')
             ->once()
             ->with("config.{$configName}", 3600, \Closure::class)
@@ -48,4 +48,4 @@ class AddonConfigServiceTest extends TestCase
 
         $this->assertInstanceOf(AddonConfig::class, $config);
     }
-} 
+}
